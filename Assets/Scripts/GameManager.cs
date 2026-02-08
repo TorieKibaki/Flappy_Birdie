@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     [SerializeField] private TextMeshProUGUI scoreText;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip coinSound;
+    [SerializeField] private AudioClip gameOverSound;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private MusicPlayer musicPlayer;
 
     [Header("UI")]
     [SerializeField] private GameObject gameOverPanel;
@@ -35,18 +42,25 @@ public class GameManager : MonoBehaviour
 
         if (scoreText != null)
         {
+            audioSource.PlayOneShot(coinSound);
             scoreText.text = "Score: " + score.ToString();
         }
     }
 
     public void GameOver()
     {
+        if (musicPlayer != null)
+        {
+            musicPlayer.StopMusic();
+        }
+
+        audioSource.PlayOneShot(gameOverSound);
+
         Time.timeScale = 0f;
 
         gameOverScoreText.text = "Score: " + score.ToString();
 
         gameOverPanel.SetActive(true);
-
     }
 
     public void Restart()
@@ -54,7 +68,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
 
         gameOverPanel.SetActive(false);
-        Scene s = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(s.buildIndex);
+        SceneManager.LoadScene("MainMenu");
     }
 }

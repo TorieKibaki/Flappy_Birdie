@@ -6,7 +6,7 @@ public class PipeManager : MonoBehaviour
     [SerializeField] private GameObject pipePrefab;
     [SerializeField] private float spawnRateInSeconds = 2f;
     [SerializeField] private float heightRange = 2f;
-    [SerializeField] private float startX = 5f;
+    [SerializeField] private float startX = 7f;
 
     private float timer = 0f;
 

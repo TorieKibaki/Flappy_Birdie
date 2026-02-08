@@ -8,12 +8,15 @@ public class Bird : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private float jumpForce;
+    [SerializeField] private AudioClip jumpSound;
+    private AudioSource audioSource;
     private bool jumping = false;
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class Bird : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            audioSource.PlayOneShot(jumpSound);
             jumping = true;
         }
     }
