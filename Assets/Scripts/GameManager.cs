@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI highScoreText; // NEW: High score during gameplay
 
+   
     [Header("Audio")]
     [SerializeField] private AudioClip coinSound;
     [SerializeField] private AudioClip gameOverSound;
@@ -46,6 +47,8 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int amount)
     {
+
+
         score += amount;
 
         if (scoreText != null)

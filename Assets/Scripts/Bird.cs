@@ -33,6 +33,14 @@ public class Bird : MonoBehaviour
             jumpParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
             jumpParticle.Play(true);
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            audioSource.PlayOneShot(jumpSound);
+            jumping = true;
+            jumpParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+            jumpParticle.Play(true);
+        }
     }
 
     private void FixedUpdate()

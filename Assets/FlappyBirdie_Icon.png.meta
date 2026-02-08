@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b68c2a89ac46cc14da3160f0a4ea688e
+guid: b1f968caa0e67ff4797a846d6e3bfc8d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2888876069629017657
-    second: Bird1-1_0
-  - first:
-      213: -2158437100716935925
-    second: Bird1-1_1
+      213: -735022125797331421
+    second: FlappyBirdie_Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,12 +100,12 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -116,89 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bird1-1_0
+      name: FlappyBirdie_Icon_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 16
-        height: 13
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93e3d5aba79571820800000000000000
-      internalID: 2888876069629017657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bird1-1_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 2
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b053ebd84e0bb02e0800000000000000
-      internalID: -2158437100716935925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bird1-1_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 1
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b7d2c88ecb2e9148a8f5b886caa3019
-      internalID: -2084662152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bird1-1_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 2
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da2c1ecfd2b67c946892ee1b3d8d07d1
-      internalID: -39111751
+      spriteID: 32e2cc9554dacc5f0800000000000000
+      internalID: -735022125797331421
       vertices: []
       indices: 
       edges: []
@@ -207,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 117f47f89398cc34e8d3fb7cb22868dc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -215,14 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Bird1-1_0: 2888876069629017657
-      Bird1-1_1: -2084662152
-      Bird1-1_2: -2158437100716935925
-      Bird1-1_3: -39111751
+      FlappyBirdie_Icon_0: -735022125797331421
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
