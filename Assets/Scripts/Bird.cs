@@ -41,7 +41,6 @@ public class Bird : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Game Over!");
-        Time.timeScale = 0f;
+        GameManager.Instance.GameOver();
     }
 }
