@@ -38,4 +38,10 @@ public class Bird : MonoBehaviour
             jumping = false;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Game Over!");
+        Time.timeScale = 0f;
+    }
 }

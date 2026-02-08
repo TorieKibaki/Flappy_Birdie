@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipeMove
   speed: 2
-  leftBound: -15
+  leftBound: -20
 --- !u!1 &1961285002341562426
 GameObject:
   m_ObjectHideFlags: 0
